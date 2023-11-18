@@ -1,23 +1,35 @@
 {
   "name": "01_hello-next",
+  "description": "Responsive, minimal HelloWorld for React NextJS.",
+  "author": {
+    "name": "Luigi Cavuoti",
+    "url": "https://lcavuoti.github.com:lcavuoti/01_hello-next.git"
+  },
+  "homepage": "https://lcavuoti.github.com/01_hello-next.git",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcavuoti/01_hello-next.git"
+  },
   "dependencies": {
+    "gh-pages": "^6.0.0",
+    "next": "14.0.2",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.2"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.0.2"
+    "eslint-config-next": "14.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   }
 }
